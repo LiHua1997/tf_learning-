@@ -9,3 +9,8 @@ result = sess.run(product)
 print result
 sess.close()
 
+#method 2 
+with tf.Session() as sess:
+    sess.run(product)
+    print result
+
